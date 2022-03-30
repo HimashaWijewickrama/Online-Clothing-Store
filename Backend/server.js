@@ -25,6 +25,10 @@ const connection = mongoose.connection;
 connection.once('open', () => {
     console.log("Successfully connected to MongoDB!");
 })
+
+const categoryRouter = require("./routes/category.js");
+app.use("/category",categoryRouter);
+
 app.listen(PORT, () => {
     console.log('Server is up and running on port number: ${PORT}')
 })
