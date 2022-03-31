@@ -5,6 +5,7 @@
     width: 1166px;
     float: right;
     background-color:#54BAB9;
+    
 }
 .topic{
     margin-top:10px;
@@ -32,9 +33,10 @@ hr{
 .bottom-container{
     background-color: #54BAB9;
     float: right;
-    margin-top: 497px;
+    margin-top: 487px;
     width: 100%;
     position:fixed;
+    bottom:0;
   }
   .copyright{
     color: #EAF6F6;
@@ -102,3 +104,14 @@ hr{
       margin-top: -45px;
       margin-right: 30px;
   }
+  .welcome{
+    right: 0;
+    margin-top: 10px;
+    margin-left: 200px;
+    height: 463px;
+  }
+  .adminimg{
+    padding-top: 15px;
+    margin-left: 20px;
+  }
+ 
