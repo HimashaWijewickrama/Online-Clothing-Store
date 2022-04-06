@@ -44,7 +44,8 @@
   width: 200px;
   position: absolute;
   z-index: 1;
-  top: 0;
+  top:0;
+  margin-bottom: 0;
   left: 0;
   background-color: #1A132F;
   overflow-x: hidden;
@@ -54,7 +55,7 @@
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
-  padding: 7px 8px 6px 16px;
+  padding: 2px 8px 6px 8px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;

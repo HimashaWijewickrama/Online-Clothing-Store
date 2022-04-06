@@ -1,11 +1,12 @@
 import React from "react";
 import {HiSearch} from "react-icons/hi";
+
 function adminHead(){
 
   let serachstyle = {height:"30px"};
     return(
       <div className="adHead">
-        <h2 className="topic">Administration</h2>
+        <h2 className="topic">Admin Portal</h2>
         <form class="d-flex">
         <input class="form-control me-2 search_in" type="search" placeholder="Search..." aria-label="Search" >
         </input> 
