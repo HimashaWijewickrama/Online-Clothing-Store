@@ -23,6 +23,8 @@ function adminHead(){
         <img src="./images/profile.png" alt="Profile" width ="50px" height="50px"/>
      </div>
       </div>
+
+      
     )
 }
 export default adminHead;
