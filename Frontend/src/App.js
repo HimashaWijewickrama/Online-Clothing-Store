@@ -7,6 +7,7 @@ import Welcome from './components/welcome'
 import CategoryList from './components/categoryList'
 import InsertCategory from './components/InsertCategory'
 
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
 
