@@ -1,12 +1,14 @@
+
 .adHead{
     color: #40514E;
     margin-top:-10px;
     height: 120px;
     width: 1166px;
     float: right;
-    background-color:#54BAB9;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
     
 }
+/*#54BAB9*/
 .topic{
     margin-top:10px;
     margin-right:10px ;
@@ -38,7 +40,7 @@ hr{
     border-radius: 50px;
 }
 .bottom-container{
-    background-color: #54BAB9;
+   background: linear-gradient(120deg,#2980b9, #8e44ad);;
     float: right;
     margin-top: 487px;
     width: 100%;
@@ -118,8 +120,9 @@ hr{
     height: 463px;
   }
   .adminimg{
-    padding-top: 15px;
-    margin-left: 20px;
+    
+    margin-left: 40%;
+
   }
   .btnadd{
     padding-top: 7px;

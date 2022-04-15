@@ -1,0 +1,14 @@
+.card{
+  border-radius: 5%;
+  position: relative;
+
+}
+
+  .card :hover{
+    background-color: #429ee4;
+    border-radius: 5%;
+    cursor:pointer;
+    
+  }
+ 
+  
