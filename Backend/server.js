@@ -29,6 +29,11 @@ connection.once('open', () => {
 const categoryRouter = require("./routes/category.js");
 app.use("/category",categoryRouter);
 
+//routes of sudeepa
+
+const userRouter = require("./routes/userRoute.js");
+ app.use("/user",userRouter); 
+
 app.listen(PORT, () => {
-    console.log('Server is up and running on port number: ${PORT}')
+    console.log('Server is up and running on port number:'+PORT);
 })
