@@ -1,9 +1,13 @@
 import React,{useState} from 'react';
-import {Button, Col, Container, Form, Row} from "react-bootstrap";
 import {useHistory }  from "react-router-dom";
 import {Link} from 'react-router-dom';
 import swal from 'sweetalert';
 import '../../css/AdminLogin.css';
+
+
+import { Icon } from 'react-icons-kit'
+import {eye} from 'react-icons-kit/feather/eye'
+import {eyeOff} from 'react-icons-kit/feather/eyeOff'
 
 
 
@@ -63,29 +67,76 @@ const AdminLogin = () => {
             history.push("categoryList")
         }
     }
+
+
+          const [type, setType]=useState('password');
+          const [icon, setIcon]=useState(eyeOff);
+
+          const handleToggle=()=>{    
+            if(type==='password'){
+              setIcon(eye);      
+              setType('text');
+            }
+            else{
+              setIcon(eyeOff);     
+              setType('password');
+            }
+          }
+
+    
         return (
+        <>
+          <div className="logo">
+          <img src="./images/logo2.jpg" alt="" width="200px" height="110px"/>
+          </div>  
             <div class="center">
             <h1>Admin Login</h1>
-            <form method="post">
+            <form method="POST">
               <div class="txt_field">
-                <input type="text" required/>
+                <input type="email" id="email" name="email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required/>
+
                 <span></span>
-                <label>Username</label>
+                <label>Email</label>
               </div>
+              
               <div class="txt_field">
-                <input type="password" required/>
-                <span></span>
+             
+                <input type={type} id="password"name="password"
+                value={password}
+                
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                
+                />
+                 
+                
+                 <Icon className='hash'onClick={handleToggle} icon={icon} size={20}/>
                 <label>Password</label>
               </div>
-              <div class="pass">Forgot Password?</div>
-              <input type="submit" value="Login"/>
+
+              <Link to={'/reset'}><div class="pass">Forgot Password?</div></Link>
+              <input type="submit" name = "signin" id="signin" 
+               value="Login"
+               onClick = {loginUser}
+              
+              />
+              
               <div class="signup_link">
+              <Link to={'/welcome'}>
                 Not a member? <a href="#">Signup</a>
+                </Link>
               </div>
             </form>
           </div>
+         </>  
+         
     );
 
 };
+
+
 
 export default AdminLogin;

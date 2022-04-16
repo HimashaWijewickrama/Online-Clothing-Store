@@ -6,6 +6,7 @@ import {MdOutlinePayments} from "react-icons/md";
 import {MdLocalOffer} from "react-icons/md"
 import { HiOutlineUsers } from "react-icons/hi";
 import {HiOutlineHome} from "react-icons/hi";
+
 function sidenav(){
  
   let iconStyles2 = {float: "left", margin:"5px", height: "20px"};
@@ -13,7 +14,7 @@ function sidenav(){
     return(
       <div>
       <div className="logo">
-      <img src="./images/logo2.jpg" alt="" width="180px" height="100px"/>
+      <img src="./images/logo2.jpg" alt="" width="200px" height="110px"/>
       </div>  
         <div class="sidenav">
         
@@ -25,7 +26,7 @@ function sidenav(){
         </button>
         </Link>
     
-        <Link to={''}>
+        <Link to={'/adminlist'}>
         <button class="dropdown-btn">
          <HiOutlineUsers style={iconStyles2} />  
           Users

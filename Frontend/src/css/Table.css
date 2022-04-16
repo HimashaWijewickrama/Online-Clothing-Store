@@ -18,9 +18,11 @@ a{
 }
 
 .container-list{
-    max-width: 1024px;
+     max-width: 1024px;
      margin: auto;
      margin-right: 10%;
+  
+     
 
 }
 .d-flex{
@@ -74,7 +76,7 @@ a{
     
 }
 #site-main{
-    margin-top: 6em;
+    margin-top: 3em;
     font-family: 'Barlow', sans-serif;
 
 }
@@ -137,6 +139,8 @@ table{
    box-shadow: none;
    overflow-y: auto;
     
+
+   
 }
 
 .h2-user-list{

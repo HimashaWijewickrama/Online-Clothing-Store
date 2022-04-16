@@ -8,6 +8,7 @@ import {FaTrashAlt} from 'react-icons/fa'
 import swal from 'sweetalert';
 import { NavLink } from "react-router-dom";
 import '../../css/Table.css';
+import Sidenav from '../sidenav';
 
 
 
@@ -45,34 +46,18 @@ const AdminList = () => {
  // };
     return(
       <>
-      
+     <div>
+        <Sidenav />
+
+      </div>
      <main id="site-main"> 
+
      <div className="container-list">
-          
-           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <h4> <b>User Management</b></h4>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#"></a>
-                  <a class="nav-link" href="#">  </a>
-                  <a class="nav-link" href="#"></a>
-                  
-                  <Link to={"/List"}><button class="btn btn-outline-info me-2" type="button"><b>Administrators list</b></button></Link>
-                  <Link to={"/patientList"}><button class="btn btn-outline-warning me-2" type="button"><b>Customers list</b></button></Link>
-                 
-                </div>
-              </div>
-            </div>
-          </nav>
-        <br></br>
+
         <h2 className="h2-user-list"><u>Administrators List</u></h2>
             <div className="box-nav d-flex justify-between">
-                <Link className="btn btn-secondary" to={'/dashboard'}>Back TO Home</Link>
-               <Link  className="btn btn-primary" to={'/addUser'}>
+                <Link className="btn btn-secondary" to={''}>Back TO Home</Link>
+               <Link  className="btn btn-primary" to={'/new'}>
                      <ImUserPlus  size="27px"/> <b> Add New Admin </b>
                 </Link>
 
@@ -92,7 +77,6 @@ const AdminList = () => {
                 setsearchTerm(e.target.value);
    
            }}
-                
                 
                 />
                 
@@ -160,7 +144,7 @@ const AdminList = () => {
                                        
                                  </Link>
 
-                                   <Link class="btn btn-success"  to={`/Edit/${user._id}` }>
+                                   <Link class="btn btn-success"  to={`/update/${user._id}`}>
                                       <AiFillEdit size="23px" color="white"/>
                                   
                                        

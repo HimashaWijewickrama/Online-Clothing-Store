@@ -1,9 +1,25 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg,#90abe5, #8f78ed);
+  height: 100vh;
+  overflow: hidden;
+}
 .adHead{
     color: #40514E;
     margin-top:-10px;
     height: 120px;
-    width: 1166px;
+    width: 1336px;
     float: right;
     background: linear-gradient(120deg,#2980b9, #8e44ad);
     
@@ -42,7 +58,7 @@ hr{
 .bottom-container{
    background: linear-gradient(120deg,#2980b9, #8e44ad);;
     float: right;
-    margin-top: 487px;
+    margin-top: 500px;
     width: 100%;
     position:fixed;
     bottom:0;
