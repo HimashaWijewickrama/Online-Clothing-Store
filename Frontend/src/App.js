@@ -36,7 +36,7 @@ function App() {
         <Route path="/adminlogin" exact component={AdminLogin}/>
         <Route path="/adminlist" exact component={AdminList}/>
         <Route path="/new" exact component={CreateAdmin}/>
-        <Route path="/update" exact component={UpdateAdmin}/>
+        <Route path="/update/:id" exact component={UpdateAdmin}/>
 
         
       </Switch>
