@@ -11,7 +11,6 @@ function  welcome(){
         <Sidenav />
       </div>
       <div class="showcase-area">
-          
           <div class="container">
         
              
@@ -24,6 +23,8 @@ function  welcome(){
                
               </div>
             </div>
+           
+
            
       </div>
     </>
