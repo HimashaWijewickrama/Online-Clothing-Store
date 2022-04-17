@@ -64,7 +64,7 @@ const AdminLogin = () => {
               });
             
             console.log("Login Successfully !!");
-            history.push("categoryList")
+            history.push("/welcome")
         }
     }
 
@@ -125,8 +125,8 @@ const AdminLogin = () => {
               />
               
               <div class="signup_link">
-              <Link to={'/welcome'}>
-                Not a member? <a href="#">Signup</a>
+              <Link to={""}>
+                Provide your email and password
                 </Link>
               </div>
             </form>

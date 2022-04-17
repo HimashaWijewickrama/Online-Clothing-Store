@@ -1,7 +1,7 @@
 
 
 /*Css */
-import './App.css';
+
 import './css/client.css';
 import './css/Footer1.css';
 
@@ -11,14 +11,25 @@ import Footer1 from './components/layout/Footer1'
 import Home2 from './components/layout/home2'
 //import Header from './components/layout/Header'
 
+/*user*/
+
+import Login from './components/user/Login';
+
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <ClientHead/>
-      <Home2/>
-      <Footer1/>
+    <Router>
+     <div className="App">
+        <ClientHead/>
+           <Switch>
+               <Route path="/Login" exact component={Login}/>
 
-    </div>
+
+           </Switch>
+         <Footer1/>
+       </div>
+    </Router>
   );
 }
 
