@@ -246,7 +246,7 @@ router.route("/edit/:id").put(async(req,res)=>{
             })
         })
     })
-
+*/
 
        //Logout
        router.get('/logout',(req,res) => {
@@ -256,7 +256,7 @@ router.route("/edit/:id").put(async(req,res)=>{
 
    });
 
-  
+  /*
 //GET CURRENT LOG IN USER
 exports.userProfile = async (req, res, next) =>{
   

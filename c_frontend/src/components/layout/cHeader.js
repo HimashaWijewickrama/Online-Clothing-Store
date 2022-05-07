@@ -65,10 +65,10 @@ function cHeader(){
           <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
        </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Profile</a>
+        <Link to='/myprofile' class="dropdown-item">Profile</Link>
         <a class="dropdown-item" href="#">My Orders</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item text-danger" href="#">Log Out</a>
+        <Link to='/login' class="dropdown-item text-danger">Log Out</Link>
        </div>
       </div>
       <Link to='/login'><button type="button" class="btn btn-warning log">Log In</button></Link>
