@@ -12,7 +12,7 @@ import Sidenav from '../sidenav';
 
 
 
-const AdminList = () => {
+const CustomerList = () => {
   const [users, setUser] = useState([]);
   const[searchTerm, setsearchTerm] = useState("");
 
@@ -21,12 +21,12 @@ const AdminList = () => {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8070/user/display");
+    const result = await axios.get("http://localhost:8070/customer/view");
     setUser(result.data.reverse());
   };
 
   const deleteUser = async id => {
-    await axios.delete(`http://localhost:8070/user/delete/${id}`);
+    await axios.delete(`http://localhost:8070/customer/remove/${id}`);
     swal({
 
       title: "Success",
@@ -54,18 +54,14 @@ const AdminList = () => {
 
      <div className="container-list">
 
-        <h2 className="h2-user-list"><u>Administrator List</u></h2>
+        <h2 className="h2-user-list"><u>Customer List</u></h2>
             <div className="box-nav d-flex justify-between">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
              
-              <Link to='/adminlist'><button class="btn btn-info me-2" type="button"><b><u>Administrator List</u></b></button></Link> 
-              <Link to='/customerlist'><button class="btn btn-warning me-2" type="button"><b>Customer List</b></button></Link> 
+              <Link to='/adminlist'><button class="btn btn-info me-2" type="button"><b>Administrator List</b></button></Link> 
+              <Link to='/customerlist'><button class="btn btn-warning me-2" type="button"><b><u>Customer List</u></b></button></Link> 
             
             </div>
-   
-               <Link  className="btn btn-primary" to={'/new'}>
-                     <ImUserPlus  size="27px"/> <b> Add New Admin </b>
-                </Link>
 
               </div>
               <div   className="search">
@@ -96,13 +92,11 @@ const AdminList = () => {
                        <thead className="thead-dark">
                            <tr>
                                
-                               <th>AdminId</th>
-                               <th>Name</th>
-                               <th>NIC</th>
+                          
+                               <th>First Name</th>
+                               <th>Last Name</th>
                                <th>Email</th>
                                <th>Password</th>
-                               <th>Role</th>
-                               <th>Tel</th>
                                <th>Actions</th>
 
                             </tr>
@@ -116,10 +110,10 @@ const AdminList = () => {
 
                                   } else if(
 
-                                      val.adminid.toLowerCase().includes(searchTerm.toLowerCase())||
-                                      val.name.toLowerCase().includes(searchTerm.toLowerCase())||
-                                      val.role.toLowerCase().includes(searchTerm.toLowerCase())||
-                                      val.email.toLowerCase().includes(searchTerm.toLowerCase())
+                                      val.fname.toLowerCase().includes(searchTerm.toLowerCase())||
+                                      val.lname.toLowerCase().includes(searchTerm.toLowerCase())||
+                                      val.cemail.toLowerCase().includes(searchTerm.toLowerCase())
+                                      
 
                                   ){
 
@@ -134,27 +128,18 @@ const AdminList = () => {
                          .map((user, index) => (
                                <tr>
                                
-                                <td>{user.adminid}</td>
-                                <td>{user.name}</td>
-                                <td>{user.nic}</td>
-                                <td>{user.email}</td>
+                                <td>{user.fname}</td>
+                                <td>{user.lname}</td>
+                                <td>{user.cemail}</td>
                                 <td>********</td>
-                                <td>{user.role}</td>
-                                <td>{user.phone}</td>
                                 <td>
                                      
 
-                                <Link class="btn btn-info"  to={`/users/${user._id}` }>
+                                <Link class="btn btn-info"  to={`/customerview/${user._id}` }>
                                       <AiFillEye size="23px" color="white"/>
                                   
                                        
                                  </Link>
-
-                                   <Link class="btn btn-success"  to={`/update/${user._id}`}>
-                                      <AiFillEdit size="23px" color="white"/>
-                                  
-                                       
-                                     </Link>
                                        
 
                                      <Link class="btn btn-danger" onClick={() => deleteUser(user._id)}>
@@ -167,6 +152,9 @@ const AdminList = () => {
                               ))}
                         </tbody>
                     </table>
+                    <h6>Click to get a PDF of all registered patient details :</h6>
+
+                     <Link to="/regList"><button type="submit" className="btn19 btn-primary">PDF generate</button></Link>
                 </form>       
 
         
@@ -176,4 +164,4 @@ const AdminList = () => {
     )
 }
 
-export default AdminList;
+export default CustomerList;

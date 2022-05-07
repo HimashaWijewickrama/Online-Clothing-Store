@@ -276,6 +276,34 @@ router.route("/update/:id").put(async(req,res)=>{
 
    });
 
+
+   // LOG OUT USER
+exports.logout =  (req, res, next)=>{
+    // res.cookie('token', null, {
+    //   expires: new Date(Date.now()),
+    //   httpOnly: true
+    // })
+  
+    res.clearCookie('token');
+  
+    res.status(200).json({
+      success: true,
+      message: "Logged out"
+    })
+  }
+  
+  //GET CURRENT LOG IN USER
+  exports.userProfile = async (req, res, next) =>{
+    
+    const user = await User.findById(req.user.id);
+    res.status(200).json({
+      success: true,
+      user
+    });
+  
+  
+  }
+
   
 
 
