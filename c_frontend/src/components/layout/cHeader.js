@@ -1,5 +1,6 @@
 import React from 'react';
 import {GrCart} from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 function cHeader(){
     return(
@@ -27,7 +28,7 @@ function cHeader(){
           <a class="nav-link text-light" href="#">Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">About</a>
+         <Link to='/about' class="nav-link text-light">About</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" href="#">Contact Us</a>
@@ -70,7 +71,7 @@ function cHeader(){
         <a class="dropdown-item text-danger" href="#">Log Out</a>
        </div>
       </div>
-      <button type="button" class="btn btn-warning log">Log In</button>
+      <Link to='/login'><button type="button" class="btn btn-warning log">Log In</button></Link>
       </div>
     )
 }
