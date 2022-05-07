@@ -3,7 +3,7 @@ import {useHistory, useParams}  from "react-router-dom";
 import swal from 'sweetalert';
 import '../css/Forms.css';
 import axios from "axios";
-
+import Sidenav from './sidenav';
 
  const UpdateProduct= ()=>{
     
@@ -65,10 +65,13 @@ import axios from "axios";
 
         
         return (
-          
+          <>
+          <div>
+      <Sidenav/>
+    </div> 
          
               <div class="container">
-                <div class="title">Insert Product</div>
+                <div class="title">Update Product</div>
                 <div class="content">
                   <form onSubmit={e => onSubmit(e)} >
                     <div class="user-details">
@@ -132,7 +135,7 @@ import axios from "axios";
                 </div>
               </div>
            
-            
+            </>
     );
 
 };

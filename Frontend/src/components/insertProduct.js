@@ -3,6 +3,7 @@ import {useHistory }  from "react-router-dom";
 import swal from 'sweetalert';
 import '../css/Forms.css';
 import axios from "axios";
+import Sidenav from './sidenav';
 
 
  const InsertProduct= ()=>{
@@ -61,6 +62,10 @@ import axios from "axios";
           
           
         return (
+          <>
+          <div>
+      <Sidenav/>
+    </div>
           
          
               <div class="container">
@@ -146,7 +151,7 @@ import axios from "axios";
                 </div>
               </div>
            
-            
+            </>
     );
 
 };

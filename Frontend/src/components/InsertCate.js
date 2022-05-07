@@ -3,6 +3,7 @@ import {useHistory }  from "react-router-dom";
 import swal from 'sweetalert';
 import '../css/Forms.css';
 import axios from "axios";
+import Sidenav from './sidenav';
 
 
 export default function CreateAdmin(){
@@ -33,6 +34,10 @@ export default function CreateAdmin(){
     }
 
         return (
+          <>
+          <div>
+      <Sidenav/>
+    </div>
           
          
               <div class="container">
@@ -62,7 +67,7 @@ export default function CreateAdmin(){
                   </form>
                 </div>
               </div>
-           
+           </>
             
     );
 

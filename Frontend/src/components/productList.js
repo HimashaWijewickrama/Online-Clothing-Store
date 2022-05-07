@@ -2,8 +2,9 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import {FaTrashAlt} from "react-icons/fa"
-import {GrUpdate} from "react-icons/gr"
+import {AiFillEdit,AiFillEye} from 'react-icons/ai'
 import swal from 'sweetalert';
+import Sidenav from './sidenav';
 
 
 const ProductList=() => {
@@ -32,8 +33,12 @@ const ProductList=() => {
      
     return(
      
+      <>
+       <div>
+      <Sidenav/>
+       </div> 
       <div className="section">
-          <h4 className="cateTopic">Product List</h4>
+       <h3 className="cateTopic"><u>Product List</u></h3>
           <div className="btnadd">
              <Link to={'/insert_product'}>
              <button type="button" class="btn btn-success">Insert Product</button>
@@ -66,7 +71,7 @@ const ProductList=() => {
                     <th scope="col">Action</th>
                  </tr>
              </thead>
-            <tbody>
+            <tbody className="tbody">
               {products.filter(val =>{
 
                       if(searchTerm === ""){
@@ -94,8 +99,8 @@ const ProductList=() => {
                 <td><img src={"./prodImage/"+prod.image} width="45px" height="45px"></img></td>
                 <td> 
                    
-                   <Link className="btn btn-warning space" to={`/updateProduct/${prod._id}`}>
-                   <GrUpdate size="20px" color="white"/></Link>
+                   <Link className="btn btn-success space" to={`/updateProduct/${prod._id}`}>
+                   <AiFillEdit size="20px" color="white"/></Link>
                
                   <Link className="btn btn-danger" onClick={() => deleteProduct(prod._id)}>
                   <FaTrashAlt size="20px" color="white"/></Link> 
@@ -106,6 +111,7 @@ const ProductList=() => {
           </table>
           </div>
       </div>
+      </>
     )
 }
 export default ProductList;

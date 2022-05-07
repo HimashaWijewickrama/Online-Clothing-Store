@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import {GrCart} from 'react-icons/gr';
-import { Link } from 'react-router-dom';
 
 const CHeader=()=>{
   const[categories, setCategories] = useState([]);
@@ -40,7 +39,7 @@ const CHeader=()=>{
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link text-light" href="#">Home </a>
+        <Link to='/home2' class="nav-link text-light">Home</Link>
         </li>
         <li class="nav-item">
          <Link to='/about' class="nav-link text-light">About</Link>

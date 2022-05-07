@@ -20,7 +20,7 @@ a{
 .container-list{
      max-width: 1024px;
      margin: auto;
-     margin-right: 10%;
+     margin-left: 20%;
   
      
 
@@ -96,7 +96,16 @@ table{
     border-spacing: 0px;
     width: 100%;
     margin-right: 150px;
+    overflow: scroll;
    
+}
+.cateb{
+    overflow-y:scroll;
+    margin-top: 85px;
+    margin-left: 35px;
+    margin-right: 65px;
+    height: 350px;
+    width: 1000px;
 }
 .table td,.table th{
     padding: .75em;

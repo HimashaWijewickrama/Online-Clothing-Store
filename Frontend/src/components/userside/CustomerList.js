@@ -46,15 +46,14 @@ const CustomerList = () => {
  // };
     return(
       <>
-     <div>
-        <Sidenav />
-
-      </div>
+         <div>
+      <Sidenav/>
+    </div>
      <main id="site-main"> 
 
      <div className="container-list">
 
-        <h2 className="h2-user-list"><u>Customer List</u></h2>
+     <h3 className="cateTopic"><u>Customer List</u></h3>
             <div className="box-nav d-flex justify-between">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
              
@@ -88,6 +87,7 @@ const CustomerList = () => {
                 <br></br>
                 
                <form>
+               <div className="cateb">
                    <table className="table">
                        <thead className="thead-dark">
                            <tr>
@@ -152,13 +152,15 @@ const CustomerList = () => {
                               ))}
                         </tbody>
                     </table>
+                    </div>
+                    <br/>
                     <h6>Click to get a PDF of all registered patient details :</h6>
 
                      <Link to="/regList"><button type="submit" className="btn19 btn-primary">PDF generate</button></Link>
                 </form>       
 
-        
-        </div>
+           </div>
+  
      </main>   
      </>
     )

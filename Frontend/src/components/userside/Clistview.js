@@ -2,7 +2,7 @@ import axios from 'axios';
 import React,{useState,useEffect} from 'react';
 import ReportGen from './ReportGen';
 import { Link } from "react-router-dom";
-
+import Sidenav from '../sidenav';
 
 export default function RegList(){
 
@@ -19,7 +19,10 @@ export default function RegList(){
 
 
     return(
+        <>
         <div>
+        <Sidenav/>
+       </div>
             <div>
                 <div class="container">
                 <center><h1>All Curently Registered Customer List In Our System </h1></center><br /><br />
@@ -28,10 +31,10 @@ export default function RegList(){
 
                     
                 <center><Link to="/customerlist"><button type="submit" className="btn21 btn-primary">Back to Table</button></Link></center>
-                    
+                    <br/><br/>
                 </div>
-            </div>
         </div>
+        </>
     )
 
 }
