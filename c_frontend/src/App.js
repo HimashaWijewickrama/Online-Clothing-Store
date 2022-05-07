@@ -9,7 +9,7 @@ import './App.css';
 import ClientHead from './components/layout/cHeader'
 import Footer1 from './components/layout/Footer1'
 import Home2 from './components/layout/home2'
-
+import About from './components/layout/About'
 /*user*/
 
 import Login from './components/user/Login';
@@ -31,7 +31,8 @@ function App() {
              <Route path="/reset" exact component={ForgotPassword}/>
              <Route path="/myprofile" exact component={Profile}/>
              <Route path="/home" exact component={Home2}/>
-         
+             <Route path="/about" exact component={About}/>
+
            </Switch>
          <Footer1/>
        </div>
