@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {FaTrashAlt} from "react-icons/fa"
 import swal from 'sweetalert';
 
-
 const CategoeyList=() => {
 
    const[categories, setCategories] = useState([]);
