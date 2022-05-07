@@ -10,7 +10,6 @@ import ClientHead from './components/layout/cHeader'
 import Footer1 from './components/layout/Footer1'
 import Home2 from './components/layout/home2'
 
-
 /*user*/
 
 import Login from './components/user/Login';
