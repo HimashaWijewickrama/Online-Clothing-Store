@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import {GrCart} from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 const CHeader=()=>{
   const[categories, setCategories] = useState([]);
@@ -42,7 +43,7 @@ const CHeader=()=>{
           <a class="nav-link text-light" href="#">Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">About</a>
+         <Link to='/about' class="nav-link text-light">About</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" href="#">Contact Us</a>
@@ -80,13 +81,13 @@ const CHeader=()=>{
           <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
        </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Profile</a>
+        <Link to='/myprofile' class="dropdown-item">Profile</Link>
         <a class="dropdown-item" href="#">My Orders</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item text-danger" href="#">Log Out</a>
+        <Link to='/login' class="dropdown-item text-danger">Log Out</Link>
        </div>
       </div>
-      <button type="button" class="btn btn-warning log">Log In</button>
+      <Link to='/login'><button type="button" class="btn btn-warning log">Log In</button></Link>
       </div>
     )
 }

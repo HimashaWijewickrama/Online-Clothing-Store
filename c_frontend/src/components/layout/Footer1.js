@@ -3,6 +3,7 @@ import React, { Fragment } from 'react'
 import {FaCcVisa} from 'react-icons/fa';
 import {FaCcMastercard} from 'react-icons/fa';
 import {SiAmericanexpress} from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 const Footer1 = () => {
     return (
@@ -53,7 +54,7 @@ const Footer1 = () => {
                                 <h4 class="footer-col">Stay Connected</h4>
 
                                 <p >Join with us to get an amazing shopping experience.</p><br/>
-                                 <button type="button" class="btn btn-light"><b>SIGN UP</b></button>
+                              <Link to="/signup"><button type="button" class="btn btn-light"><b>SIGN UP</b></button></Link>   
                             
                         </div>
 

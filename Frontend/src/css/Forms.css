@@ -57,6 +57,19 @@ form .input-box span.details{
 .user-details .input-box input:valid{
   border-color: #9b59b6;
 }
+
+
+.input-box select{
+    border-color: #9b59b6;
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
  form .gender-details .gender-title{
   font-size: 20px;
   font-weight: 500;

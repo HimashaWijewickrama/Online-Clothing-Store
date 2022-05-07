@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +12,6 @@ body{
   height: 100%;
   overflow-y:scroll;
 }
-
 .adHead{
     color: #40514E;
     margin-top:-10px;
@@ -21,12 +21,17 @@ body{
     background: linear-gradient(120deg,#2980b9, #8e44ad);
     
 }
+/*#54BAB9*/
 .topic{
     margin-top:10px;
     margin-right:10px ;
     font-weight: 100;
     font-family: 'Montserrat',sans-serif;
     color: #f0ebe6;
+}
+.logo1{
+  margin-top: 20px;
+  margin-left: 200px;
 }
 .cateTopic{
     padding-top: 10px;
@@ -54,7 +59,7 @@ hr{
 .bottom-container{
     background: linear-gradient(120deg,#2980b9, #8e44ad);
     float: right;
-    margin-top: 60px;
+    margin-top:500px;
     width: 100%;
     position:absolute;
 
@@ -133,8 +138,9 @@ hr{
    
   }
   .adminimg{
-    padding-top: 15px;
-    margin-left: 20px;
+    
+    margin-left: 40%;
+
   }
   .btnadd{
     padding-top: 7px;

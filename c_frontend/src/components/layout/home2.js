@@ -7,6 +7,7 @@ const Home2=() =>{
       const[products, setProducts] = useState([]);
       const[searchTerm, setsearchTerm] = useState("");
 
+
       useEffect(()=>{
         loadUsers();
       },[]);
@@ -48,6 +49,7 @@ const Home2=() =>{
                
             </div>
      <div className="raw">
+
      {products.filter(val =>{
 
                 if(searchTerm === ""){
@@ -64,6 +66,7 @@ const Home2=() =>{
                 }
 
                 }).map((prod, index) => (
+
                     <div class="card" >
                         <div className="card-body">
                        
