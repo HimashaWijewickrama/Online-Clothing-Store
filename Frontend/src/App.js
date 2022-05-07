@@ -46,7 +46,7 @@ function App() {
         <Route path="/customerview" exact component={CustomerView}/>
         <Route path="/reGen" exact component={ReportGen}/>
         <Route path="/regList" exact component={RegList}/>
-        
+       
       </Switch>
       <AdminFooter/>
     </div>
