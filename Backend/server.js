@@ -29,6 +29,9 @@ connection.once('open', () => {
 const categoryRouter = require("./routes/category.js");
 app.use("/category",categoryRouter);
 
+const productRouter = require("./routes/product.js");
+app.use("/product", productRouter);
+
 app.listen(PORT, () => {
     console.log('Server is up and running on port number: ${PORT}')
 })

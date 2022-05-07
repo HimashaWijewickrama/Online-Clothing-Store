@@ -13,7 +13,7 @@ function sidenav(){
     return(
       <div>
       <div className="logo">
-      <img src="./images/logo2.jpg" alt="" width="180px" height="100px"/>
+      <img src="./images/logo2.jpg" alt="" width="200px" height="110px"/>
       </div>  
         <div class="sidenav">
         
@@ -41,7 +41,7 @@ function sidenav(){
         </button>
         </Link>   
        
-         <Link to={''}>
+         <Link to={'/productList'}>
          <button class="dropdown-btn">
          <MdOutlineProductionQuantityLimits style={iconStyles2} />
            Products

@@ -6,8 +6,6 @@ import {SiAmericanexpress} from 'react-icons/si';
 
 const Footer1 = () => {
     return (
-
-        
         <Fragment>
             <footer class="footer1">
                 <div class="footer1-container">

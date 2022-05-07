@@ -9,7 +9,7 @@ import './css/Footer1.css';
 import ClientHead from './components/layout/cHeader'
 import Footer1 from './components/layout/Footer1'
 import Home2 from './components/layout/home2'
-//import Header from './components/layout/Header'
+
 
 function App() {
   return (

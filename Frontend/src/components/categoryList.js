@@ -40,7 +40,7 @@ const CategoeyList=() => {
           <h4 className="cateTopic">Category List</h4>
           <div className="btnadd">
              <Link to={'/insert_cate'}>
-              <button className="ibtn">Insert Category</button>
+             <button type="button" class="btn btn-success">Insert Category</button>
               </Link>
           </div>
           <form >
@@ -81,8 +81,8 @@ const CategoeyList=() => {
                 <td>{cate.cate_description}</td>
                 <td> 
                    
-                  <Link onClick={() => deleteCategory(cate._id)}>
-                  <FaTrashAlt size="23px" color="red"/></Link> 
+                  <Link className="btn btn-danger" onClick={() => deleteCategory(cate._id)}>
+                  <FaTrashAlt size="20px" color="white"/></Link> 
                   </td>
                </tr>
                   ))}
