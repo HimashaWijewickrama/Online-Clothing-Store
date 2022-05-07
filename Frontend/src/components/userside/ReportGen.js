@@ -17,6 +17,7 @@ const ReportGen = Customer =>{
             
         ]
 
+        
         tableRows.push(userData);
     });
 
