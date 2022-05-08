@@ -23,7 +23,7 @@ function About(){
     
                 <div class="text-container">
                     <h1>About us</h1>
-                    <p><b>Our System Name is Shopee and this is a Online Clothing Store.You can Join with us. You can choose and buythe any category type of cloths in our system. we are Shopee Grup. Colombo 7, Sri Lanka.</b></p>
+                    <p><b>We are Shopee and this is a Online Clothing Store.You can Join with us. You can choose and buy any category type of clothes in our online mart. We are Shopee Group. Colombo 7, Sri Lanka.</b></p>
                      <Link to='/login'>Back To Page</Link>
                 </div>
                 

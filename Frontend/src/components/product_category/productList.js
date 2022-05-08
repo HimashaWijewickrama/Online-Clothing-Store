@@ -55,7 +55,7 @@ const ProductList=() => {
           <form >
         <input className="form-control me-2 search" type="text" placeholder="Search Product" name="search" onChange={(e)=>{
              setsearchTerm(e.target.value);
-		}} />
+	}} />
       
       </form >
           <div className="catetb">

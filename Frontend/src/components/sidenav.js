@@ -4,6 +4,7 @@ import {MdOutlineCategory} from "react-icons/md";
 import {MdOutlineProductionQuantityLimits} from "react-icons/md"
 import {MdOutlinePayments} from "react-icons/md";
 import {MdLocalOffer} from "react-icons/md"
+import {MdOutlineFeedback} from "react-icons/md";
 import { HiOutlineUsers } from "react-icons/hi";
 import {HiOutlineHome} from "react-icons/hi";
 
@@ -50,7 +51,7 @@ function sidenav(){
         </button>
         </Link>
         
-        <Link to={''}>
+        <Link to={'/all'}>
         <button class="dropdown-btn">
         <MdOutlinePayments style={iconStyles2} />
           Payments
@@ -58,10 +59,18 @@ function sidenav(){
         </button>
         </Link>
 
-        <Link to={''}>
+        <Link to={'/offer'}>
         <button class="dropdown-btn">
         <MdLocalOffer style={iconStyles2} />
           Offers
+          <hr></hr>
+        </button>
+        </Link>
+
+        <Link to={'/offer'}>
+        <button class="dropdown-btn">
+        <MdOutlineFeedback style={iconStyles2} />
+          Feedbacks
           <hr></hr>
         </button>
         </Link>

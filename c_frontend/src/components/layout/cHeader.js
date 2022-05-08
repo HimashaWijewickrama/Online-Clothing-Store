@@ -48,7 +48,7 @@ const CHeader=()=>{
           <a class="nav-link text-light" href="#">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Offers</a>
+        <Link to='/user_offer' class="nav-link text-light">Offer</Link>
         </li>
        </ul>
      </div>
@@ -71,9 +71,11 @@ const CHeader=()=>{
 
 
        <div className="imgCart">  
+       <Link to='/cart'>
        <button type="button" class="btn btn-warning">
           <GrCart size={20}  />
           </button>
+          </Link>
        </div>
        
        

@@ -73,7 +73,7 @@ const Home2=() =>{
                          <><img src={"./prodImage/"+prod.image} width="160px" height="160px"></img>
                          <h5 className="card-title">{prod.clothe_name}</h5>
                          <h6>Rs.{prod.price}.00</h6>
-                         <button className="btn btn-warning "> <FaCartPlus /> Add to cart   </button></>
+                         <a href={`add_cart/${prod._id}`} className="btn btn-warning "> <FaCartPlus /> Add to cart   </a></>
                         
                         </div>
                       
