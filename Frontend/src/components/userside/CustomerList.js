@@ -63,6 +63,14 @@ const CustomerList = () => {
             </div>
 
               </div>
+              <div class="btn-group">
+            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Export as
+            </button>
+            <div class="dropdown-menu">
+              <Link to="/regList"><a class="dropdown-item" href="#">PDF</a></Link>
+            </div>
+          </div>
               <div   className="search">
               
               <div className=" col-lg-16 mt-2 mb-2 ml-1">
@@ -153,10 +161,7 @@ const CustomerList = () => {
                         </tbody>
                     </table>
                     </div>
-                    <br/>
-                    <h6>Click to get a PDF of all registered patient details :</h6>
-
-                     <Link to="/regList"><button type="submit" className="btn19 btn-primary">PDF generate</button></Link>
+                  
                 </form>       
 
            </div>

@@ -201,3 +201,25 @@ hr{
 .space{
   margin-right: 10px;
 }
+.btn1{
+  font-family:'Montserrat',sans-serif;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  margin-left: 260px;
+  margin-top: -25px;
+}
+.btn2{
+  font-family: 'Montserrat',sans-serif;
+  margin-left: 275px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.sea{
+  margin-left: 610px;
+  margin-top: -40px;
+}

@@ -118,7 +118,7 @@ import Sidenav from './sidenav';
                             <option >Extra Large</option>
       
                         </select>
-                        </div><br/>
+                        </div>
                         
 
                         <div class="input-box">

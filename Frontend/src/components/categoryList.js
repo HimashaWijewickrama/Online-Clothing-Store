@@ -41,7 +41,7 @@ const CategoeyList=() => {
     </div>
      
       <div className="section">
-           <h3 className="cateTopic"><u>Categoey List</u></h3>
+           <h3 className="cateTopic"><u>Category List</u></h3>
           <div className="btnadd">
              <Link to={'/insert_cate'}>
              <button type="button" class="btn btn-success">Insert Category</button>

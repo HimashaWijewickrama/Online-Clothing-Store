@@ -67,30 +67,14 @@ const AdminList = () => {
                 </Link>
 
               </div>
-              <div   className="search">
-              
-              <div className=" col-lg-16 mt-2 mb-2 ml-1">
-                <input
-                className="form-control"
-                type="search"
-                placeholder="search here"
-                name="searchTerm"
-              // onChange={this.handleTextSearch}
-
-              onChange={(e)=>{
-
-                setsearchTerm(e.target.value);
+              <form >
+        <input className="form-control me-2 search sea" type="text" placeholder="Search Product" name="search" onChange={(e)=>{
+             setsearchTerm(e.target.value);
+		}} />
+      
+      </form >
    
-           }}
-                
-                />
-                
-              </div>
-           </div>   
-
-                <br></br>
-                
-               <form>
+             <form>
                  <div className="cateb">
                    <table className="table">
                        <thead className="thead-dark">

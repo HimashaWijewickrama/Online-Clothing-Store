@@ -49,7 +49,7 @@ const ProductList=() => {
               Export as
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">PDF</a>
+              <Link to="/reportView"><a class="dropdown-item" href="#">PDF</a></Link>
             </div>
           </div>
           <form >

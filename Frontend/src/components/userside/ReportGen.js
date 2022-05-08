@@ -27,8 +27,8 @@ const ReportGen = Customer =>{
     const day = date.getDate();
 
     doc.autoTable(tableColumn,tableRows,{startY:20});
-    doc.text("All Patients Registered List",14,15);
-    doc.save(`Patient_${year}`+" "+`${month}`+" "+`${day}`+".pdf");
+    doc.text("All Customers Registered List",14,15);
+    doc.save(`Customers_${year}`+" "+`${month}`+" "+`${day}`+".pdf");
 
 }
 

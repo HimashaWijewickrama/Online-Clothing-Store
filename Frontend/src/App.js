@@ -10,6 +10,8 @@ import InsertCategory from './components/InsertCate'
 import InsertProduct from './components/insertProduct';
 import ProductList from './components/productList';
 import UpdateProduct from './components/updateProduct';
+import reportProduct from './components/prodRepo';
+import ReportProd from './components/reportProd';
 
 
 //user side
@@ -40,6 +42,9 @@ function App() {
         <Route path="/insert_product" exact component={InsertProduct}/>
         <Route path="/productList" exact component={ProductList}/>
         <Route path="/updateProduct/:id" exact component={UpdateProduct}/>
+        <Route path="/reportView" exact component={reportProduct}/>
+        <Route path="/productReport" exact component={ReportProd}/>
+        
 
 
 
