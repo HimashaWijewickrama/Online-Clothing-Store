@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import {FaTrashAlt} from "react-icons/fa"
 import {AiFillEdit,AiFillEye} from 'react-icons/ai'
 import swal from 'sweetalert';
-import Sidenav from './sidenav';
+import Sidenav from '../sidenav';
 
 
 const ProductList=() => {

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 import {FaTrashAlt} from "react-icons/fa"
 import swal from 'sweetalert';
-import Sidenav from './sidenav';
+import Sidenav from '../sidenav';
 
 const CategoeyList=() => {
 

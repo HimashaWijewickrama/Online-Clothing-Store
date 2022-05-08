@@ -2,7 +2,7 @@ import axios from 'axios';
 import React,{useState,useEffect} from 'react';
 import ReportProduct from './reportProd';
 import { Link } from "react-router-dom";
-import Sidenav from './sidenav';
+import Sidenav from '../sidenav';
 
 
 export default function ReportP(){

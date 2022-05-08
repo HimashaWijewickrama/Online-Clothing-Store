@@ -1,9 +1,8 @@
 import React,{useState , useEffect} from 'react';
 import {useHistory }  from "react-router-dom";
 import swal from 'sweetalert';
-import '../css/Forms.css';
 import axios from "axios";
-import Sidenav from './sidenav';
+import Sidenav from '../sidenav';
 
 
  const InsertProduct= ()=>{

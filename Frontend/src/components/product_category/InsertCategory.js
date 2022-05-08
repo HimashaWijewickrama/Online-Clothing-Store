@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import axios from "axios";
 import {useHistory} from 'react-router-dom';
 import swal from 'sweetalert';
+import Sidenav from '../sidenav';
 
 function InsertCategory(){
 
@@ -32,11 +33,18 @@ function InsertCategory(){
      }
 
     return(
-      <div className="section">
-            <h4 className="cateTopic">Insert New Category</h4>
+      <>
+      <div>
+  <Sidenav/>
+</div>
+        <div class="container">
+        <div class="title">Insert Product</div>
+        <div class="content">
          <form  onSubmit={sendData}>
-           <div className="form-group container">
-            <label for="exampleFormControlInput1">Category Name</label>
+         <div class="user-details">
+
+         <div class="input-box">
+                        <span class="details">Category Name</span>
             <input type="text" className="form-control" id="cate_name" placeholder="Mens T-Shirt" required onChange={(e)=>{
             
             setCate_Name(e.target.value);
@@ -44,17 +52,21 @@ function InsertCategory(){
          </div>
 
 
-         <div className="form-group container">
-            <label for="exampleFormControlInput1">Category Description</label>
-            <input type="text" className="form-control" id="cate_desc" placeholder="Example" required onChange={(e)=>{
+         <div class="input-box">
+                        <span class="details">Category Description</span>
+            <input type="text" className="form-control" id="cate_desc" placeholder="Branded Category" required onChange={(e)=>{
             
             setCate_Desc(e.target.value);
           }}/>
          </div>
-         <button type="submit" className="btn btn-primary">Submit Category</button>
+         </div>
+         <div class="button">
+         <input type="submit" value="Submit Category"/>
+         </div>
         </form>
-
+        </div>
       </div>
+      </>
     )
 }
 export default InsertCategory;

@@ -1,17 +1,19 @@
 import './App.css';
 import './css/admin.css';
+import './css/Forms.css';
 
+// product and categoty
 
-import AdminHead from './components/adminHead'
-import AdminFooter from './components/adminFooter'
-import Welcome from './components/welcome'
-import CategoryList from './components/categoryList'
-import InsertCategory from './components/InsertCate'
-import InsertProduct from './components/insertProduct';
-import ProductList from './components/productList';
-import UpdateProduct from './components/updateProduct';
-import reportProduct from './components/prodRepo';
-import ReportProd from './components/reportProd';
+import AdminHead from './components/product_category/adminHead'
+import AdminFooter from './components/product_category/adminFooter'
+import Welcome from './components/product_category/welcome'
+import CategoryList from './components/product_category/categoryList'
+import InsertCategory from './components/product_category/InsertCategory'
+import InsertProduct from './components/product_category/insertProduct';
+import ProductList from './components/product_category/productList';
+import UpdateProduct from './components/product_category/updateProduct';
+import reportProduct from './components/product_category/prodRepo';
+import ReportProd from './components/product_category/reportProd';
 
 
 //user side
