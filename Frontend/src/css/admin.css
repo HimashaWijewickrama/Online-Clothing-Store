@@ -1,4 +1,5 @@
 
+
 *{
   margin: 0;
   padding: 0;
@@ -177,7 +178,8 @@ hr{
     border-radius: 40px;
   }
 
- 
+
+
 .table{
     border-spacing: 0px;
     margin-right: 150px;
@@ -201,3 +203,4 @@ hr{
 .space{
   margin-right: 10px;
 }
+
