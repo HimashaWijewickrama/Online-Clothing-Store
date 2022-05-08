@@ -1,20 +1,34 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import { Link } from "react-router-dom";
 import {GrCart} from 'react-icons/gr';
-import { Link } from 'react-router-dom';
 
-function cHeader(){
+const CHeader=()=>{
+  const[categories, setCategories] = useState([]);
+
+  useEffect(()=>{
+		loadUsers();
+	},[]);
+
+  const loadUsers = async ()=>{
+		const result = await axios.get("http://localhost:8070/category/");
+		setCategories(result.data.reverse());
+	};
+
+
+
     return(
       <div className='header'>
         <div className="logo">
-        <img src="/images/logo2.jpg" width={175} height={60}/>
+        <img className="logo1" src="/images/logo2.jpg" width={175} height={60}/>
         </div>  
 
       <div class="dropdown">
        <button class="dropbtn">Categories</button>
          <div class="dropdown-content">
-          <a href="#">Mens-Trousers</a>
-          <a href="#">Mens-T-shirts</a>
-          <a href="#">Womens-Blouse</a>
+           {categories.map((cate, index) => (
+          <a href="#">{cate.cate_name}</a>
+           ))}
           </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light navi ">
@@ -25,7 +39,7 @@ function cHeader(){
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link text-light" href="#">Home </a>
+        <Link to='/home2' class="nav-link text-light">Home</Link>
         </li>
         <li class="nav-item">
          <Link to='/about' class="nav-link text-light">About</Link>
@@ -46,7 +60,8 @@ function cHeader(){
                     id="search_field"
                     className="form-control"
                     placeholder="Search here..."
-                />
+                   />
+               
                 <div className="input-group-append">
                     <button id="search_btn" className="btn">
                         <i className="fa fa-search" aria-hidden="true"></i>
@@ -76,4 +91,4 @@ function cHeader(){
       </div>
     )
 }
-export default cHeader;
+export default CHeader;

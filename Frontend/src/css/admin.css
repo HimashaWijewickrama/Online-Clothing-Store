@@ -10,14 +10,14 @@ body{
   margin: 0;
   padding: 0;
   background: linear-gradient(120deg,#90abe5, #8f78ed);
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  overflow-y:scroll;
 }
 .adHead{
     color: #40514E;
     margin-top:-10px;
     height: 120px;
-    width: 1336px;
+    width: 1149px;
     float: right;
     background: linear-gradient(120deg,#2980b9, #8e44ad);
     
@@ -30,10 +30,14 @@ body{
     font-family: 'Montserrat',sans-serif;
     color: #f0ebe6;
 }
+.logo1{
+  margin-top: 20px;
+  margin-left: 200px;
+}
 .cateTopic{
     padding-top: 10px;
     margin-right: 20px;
-    color: #40514E;
+    color: #0d0f0f;
     font-weight: bold ;
     font-family: 'Merriweather', serif;
 }
@@ -54,12 +58,12 @@ hr{
     border-radius: 50px;
 }
 .bottom-container{
-   background: linear-gradient(120deg,#2980b9, #8e44ad);;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
     float: right;
-    margin-top: 500px;
+    margin-top:500px;
     width: 100%;
-    position:fixed;
-    bottom:0;
+    position:absolute;
+
   }
   .copyright{
     color: #EAF6F6;
@@ -132,6 +136,7 @@ hr{
     margin-top: 10px;
     margin-left: 200px;
     height: 463px;
+   
   }
   .adminimg{
     
@@ -143,37 +148,17 @@ hr{
     margin-right: 100px;
     float: right;
   }
-  .ibtn {
-    background: #24d65c;
-    background-image: -webkit-linear-gradient(top, #24d65c, #77b82c);
-    background-image: -moz-linear-gradient(top, #24d65c, #77b82c);
-    background-image: -ms-linear-gradient(top, #24d65c, #77b82c);
-    background-image: -o-linear-gradient(top, #24d65c, #77b82c);
-    background-image: linear-gradient(to bottom, #24d65c, #77b82c);
-    -webkit-border-radius: 18;
-    -moz-border-radius: 18;
-    border-radius: 18px;
-    font-family: Georgia;
-    color: #ffffff;
-    font-size: 14px;
-    padding: 7px 14px 7px 14px;
-    text-decoration: none;
+  .btn-group{
+    padding-top: 7px;
+    margin-right: 50px;
+    float: right;
   }
-  
-  .ibtn:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #4734d9);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #4734d9);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #4734d9);
-    background-image: -o-linear-gradient(top, #3cb0fd, #4734d9);
-    background-image: linear-gradient(to bottom, #3cb0fd, #4734d9);
-    text-decoration: none;
-  }  
   .catetb{
     margin-top: 85px;
     margin-left: 75px;
     margin-right: 75px;
-    overflow-y:auto;  
+    height: 350px;
+    overflow-y:scroll;
   }
   .container{
     text-align: left;
@@ -193,5 +178,29 @@ hr{
     border-radius: 40px;
   }
 
- 
-  
+
+
+.table{
+    border-spacing: 0px;
+    margin-right: 150px;
+   
+}
+.table td,.table th{
+    padding: .45em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+
+}
+
+.thead-dark {
+
+  color: #fff;
+  background-color: black;
+  border-color: #32383e;
+}
+
+.space{
+  margin-right: 10px;
+}
+

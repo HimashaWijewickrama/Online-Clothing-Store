@@ -57,7 +57,7 @@ const Login = () => {
               });
             
             console.log("Login Successfully !!");
-            history.push("/home")
+            history.push("/home2")
         }
     }
 

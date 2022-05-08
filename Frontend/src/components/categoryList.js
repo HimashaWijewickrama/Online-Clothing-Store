@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 import {FaTrashAlt} from "react-icons/fa"
 import swal from 'sweetalert';
+import Sidenav from './sidenav';
 
 const CategoeyList=() => {
 
@@ -34,12 +35,16 @@ const CategoeyList=() => {
 	};
 
     return(
+      <>
+      <div>
+      <Sidenav/>
+    </div>
      
       <div className="section">
-          <h4 className="cateTopic">Category List</h4>
+           <h3 className="cateTopic"><u>Categoey List</u></h3>
           <div className="btnadd">
              <Link to={'/insert_cate'}>
-              <button className="ibtn">Insert Category</button>
+             <button type="button" class="btn btn-success">Insert Category</button>
               </Link>
           </div>
           <form >
@@ -56,7 +61,7 @@ const CategoeyList=() => {
                     <th scope="col">Action</th>
                  </tr>
              </thead>
-            <tbody>
+            <tbody className="tbody">
                {categories.filter(val =>{
 
                      if(searchTerm === ""){
@@ -80,8 +85,8 @@ const CategoeyList=() => {
                 <td>{cate.cate_description}</td>
                 <td> 
                    
-                  <Link onClick={() => deleteCategory(cate._id)}>
-                  <FaTrashAlt size="23px" color="red"/></Link> 
+                  <Link className="btn btn-danger" onClick={() => deleteCategory(cate._id)}>
+                  <FaTrashAlt size="20px" color="white"/></Link> 
                   </td>
                </tr>
                   ))}
@@ -89,6 +94,7 @@ const CategoeyList=() => {
           </table>
           </div>
       </div>
+      </>
     )
 }
 export default CategoeyList;

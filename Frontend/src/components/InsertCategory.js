@@ -51,7 +51,7 @@ function InsertCategory(){
             setCate_Desc(e.target.value);
           }}/>
          </div>
-         <button type="submit" className="btn btn-primary">Insert Category</button>
+         <button type="submit" className="btn btn-primary">Submit Category</button>
         </form>
 
       </div>

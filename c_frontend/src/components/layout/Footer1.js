@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 
 const Footer1 = () => {
     return (
-
-        
         <Fragment>
             <footer class="footer1">
                 <div class="footer1-container">

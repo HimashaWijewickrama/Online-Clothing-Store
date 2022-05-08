@@ -42,7 +42,7 @@ function sidenav(){
         </button>
         </Link>   
        
-         <Link to={''}>
+         <Link to={'/productList'}>
          <button class="dropdown-btn">
          <MdOutlineProductionQuantityLimits style={iconStyles2} />
            Products

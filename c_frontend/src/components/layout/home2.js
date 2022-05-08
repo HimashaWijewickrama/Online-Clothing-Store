@@ -5,6 +5,8 @@ import {FaCartPlus} from 'react-icons/fa';
 
 const Home2=() =>{
       const[products, setProducts] = useState([]);
+      const[searchTerm, setsearchTerm] = useState("");
+
 
       useEffect(()=>{
         loadUsers();
@@ -30,11 +32,41 @@ const Home2=() =>{
         <div class="slide">
         <img src="./images/4.jpg" width="1028px" height="210px"></img>
         </div>
+        
       </div>
      </div>
+     
+
      <h3 className="text5">Latest Arrivals</h3>
+     <div className="input-groups">
+                <input
+                    type="text"
+                    id="search_fields"
+                    className="form-control"
+                    placeholder="Search Product..."onChange={(e)=>{
+                      setsearchTerm(e.target.value);
+             }} />
+               
+            </div>
      <div className="raw">
-     {products.map((prod, index) => (
+
+     {products.filter(val =>{
+
+                if(searchTerm === ""){
+
+                    return val;
+
+                } else if(
+
+                  val.clothe_name.toLowerCase().includes(searchTerm.toLowerCase())|| val.clothe_cate.toLowerCase().includes(searchTerm.toLowerCase())
+                ){
+
+                return val;
+
+                }
+
+                }).map((prod, index) => (
+
                     <div class="card" >
                         <div className="card-body">
                        

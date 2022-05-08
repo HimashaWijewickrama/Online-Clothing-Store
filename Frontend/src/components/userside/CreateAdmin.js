@@ -66,10 +66,9 @@ export default function CreateAdmin(){
 
         return (
           <>
-                <div>
-                    <Sidenav />
-
-                </div>
+                   <div>
+      <Sidenav/>
+    </div>
 
               <div class="container">
                 <div class="title">Add New Administrator</div>

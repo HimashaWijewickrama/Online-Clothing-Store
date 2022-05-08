@@ -7,9 +7,9 @@ import Sidenav from './sidenav';
 function  welcome(){
     return(
     <>
-      <div>
-        <Sidenav />
-      </div>
+    <div>
+      <Sidenav/>
+    </div>
       <div class="showcase-area">
           <div class="container">
         
@@ -18,7 +18,7 @@ function  welcome(){
               <h1>Welcome To Admin Portal..</h1>
              
                 
-                <img src="https://cdn.dribbble.com/users/207059/screenshots/14553059/media/0d1a396252374c17f4c90a8efadd819a.gif"  height={470}/>
+                <img src="https://cdn.dribbble.com/users/207059/screenshots/14553059/media/0d1a396252374c17f4c90a8efadd819a.gif"  height={440}/>
            
                
               </div>

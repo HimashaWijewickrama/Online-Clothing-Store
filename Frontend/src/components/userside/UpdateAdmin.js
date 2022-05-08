@@ -68,10 +68,9 @@ function UpdateAdmin() {
 
         return (
             <>
-            <div>
-                <Sidenav />
-
-            </div>
+              <div>
+      <Sidenav/>
+    </div>
 
           <div class="container">
             <div class="title">Update Administrator</div>

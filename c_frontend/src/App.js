@@ -11,6 +11,7 @@ import Footer1 from './components/layout/Footer1'
 import Home2 from './components/layout/home2'
 import About from './components/layout/About'
 
+
 /*user*/
 
 import Login from './components/user/Login';
@@ -26,6 +27,8 @@ function App() {
      <div className="App">
         <ClientHead/>
            <Switch>
+           <Route path="/home2" exact component={Home2}/>
+
                
              <Route path="/login" exact component={Login}/>
              <Route path="/signup" exact component={Register}/>
