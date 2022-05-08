@@ -1,4 +1,5 @@
 
+
 *{
   margin: 0;
   padding: 0;
@@ -177,7 +178,8 @@ hr{
     border-radius: 40px;
   }
 
- 
+
+
 .table{
     border-spacing: 0px;
     margin-right: 150px;
@@ -201,6 +203,7 @@ hr{
 .space{
   margin-right: 10px;
 }
+
 .btn1{
   font-family:'Montserrat',sans-serif;
   border-radius: 5px;
@@ -223,3 +226,4 @@ hr{
   margin-left: 610px;
   margin-top: -40px;
 }
+
