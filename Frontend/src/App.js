@@ -43,6 +43,7 @@ import AllPayment from './components/payment_feedback/AllPayment';
 import UpdatePayment from './components/payment_feedback/UpdatePayment';
 import reportPayment from './components/payment_feedback/payRepo'; 
 import payRepoGen from './components/payment_feedback/reportPay';
+import allfed   from './components/payment_feedback/AllFeedback';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ImOffice } from 'react-icons/im';
@@ -87,6 +88,7 @@ function App() {
         <Route path="/updatePayment/:id" exact component={UpdatePayment}/>
         <Route path="/reportPay" exact component={reportPayment}/>
         <Route path="/PayPDF" exact component={payRepoGen}/>
+        <Route path="/allfed" exact component={allfed}/>
 
 
        

@@ -67,7 +67,7 @@ function sidenav(){
         </button>
         </Link>
 
-        <Link to={'/offer'}>
+        <Link to={'/allfed'}>
         <button class="dropdown-btn">
         <MdOutlineFeedback style={iconStyles2} />
           Feedbacks

@@ -28,6 +28,11 @@ import UpdateCart from './components/cart_offer/UpdateCart'
 import UserOffer from './components/cart_offer/UserOffer';
 import OfferView from './components/cart_offer/OfferView';
 
+/* payment feedback */
+import addpay from './components/feedback_pay/AddPayment';
+import addfed from './components/feedback_pay/AddFeedback';
+import addcon from './components/feedback_pay/AddContact';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
   return (
@@ -51,6 +56,10 @@ function App() {
              <Route path="/update/:id" exact component={UpdateCart} />
              <Route path="/user_offer" exact component={UserOffer} />
              <Route path="/get_offer/:id" exact component={OfferView} />
+
+             <Route path="/addpay" exact component={addpay}/>
+             <Route path="/addpfed" exact component={addfed}/>
+             <Route path="/addcon" exact component={addcon}/>
 
            </Switch>
          <Footer1/>
