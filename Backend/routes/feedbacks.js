@@ -6,7 +6,7 @@ let Feedback = require("../models/Feedback");
 
 //add new feedback
 router.route("/adds").post((req, res) => {
-    const feedid = req.body.feedid;
+    
     const cusname = req.body.cusname;
 
     const subject = req.body.subject;
@@ -15,7 +15,7 @@ router.route("/adds").post((req, res) => {
 
 
     const newFeedback = new Feedback({
-        feedid,
+      
         cusname,
 
         subject,
@@ -48,7 +48,7 @@ router.route("/alls").get((req, res) => {
 router.route("/updates/:id").put(async (req, res) => {
     let fadId = req.params.id;
     const {
-        feedid,
+     
         cusname,
 
         subject,
@@ -58,7 +58,7 @@ router.route("/updates/:id").put(async (req, res) => {
     } = req.body;
 
     const updateFeedback = {
-        feedid,
+    
         cusname,
 
         subject,
