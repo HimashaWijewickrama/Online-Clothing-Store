@@ -27,9 +27,9 @@ export default function ReportPay(){
         <div>
             <div>
                 <div class="container">
-                <center><h1>Latest Updates</h1></center><br /><br />
-                <center><p>Click the button below to get all the details about all the Payments. </p></center><br />
-                <button className=" btn1 btn-primary" onClick={()=>{payRepoGen(payment)}}>Generate PDF</button>
+                <center><h1>Generate All Payment Details Report</h1></center><br /><br />
+                <center><p>Click the button below to get all the details about all the customer's payments. </p></center><br />
+                <button className="btn1 btn-primary" onClick={()=>{payRepoGen(payment)}}>Generate PDF</button>
 
                     
                 <Link to="/all"><button type="submit" className=" btn2 btn-warning">Back to list</button></Link>
