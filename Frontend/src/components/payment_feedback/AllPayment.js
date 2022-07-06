@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Sidenav from '../sidenav';
-
-// import AdminDelPayment from './alerts/AdminDelPayment';
 import Swal from 'sweetalert2';
+import {FaTrashAlt} from 'react-icons/fa';
+import {AiFillEdit} from 'react-icons/ai';
 
 const AllPayments = (props) => {
   const [payments, setPayments] = useState([]);
@@ -46,7 +46,7 @@ const AllPayments = (props) => {
     if (result.isConfirmed) {
       Swal.fire(
         'Deleted!',
-        'Your file has been deleted.',
+        'Selected record has been deleted.',
         'success'
       )
     }
@@ -83,7 +83,7 @@ const AllPayments = (props) => {
       <Sidenav/>
        </div> 
        <div className="section">
-       <h3 className="cateTopic"><u>Product List</u></h3>
+       <h3 className="cateTopic"><u>All Payments List</u></h3>
           
           <div class="btn-group">
             <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -95,28 +95,27 @@ const AllPayments = (props) => {
           </div>
    
       <form >
-        <input className="form-control me-2 search" type="text" placeholder="Search Product" name="search" onChange={(e)=>{
+        <input className="form-control me-2 search" type="text" placeholder="Search Payment Here.." name="search" onChange={(e)=>{
              setSearchInput(e.target.value);
 	}} />
       
       </form >
-
-      <div className="catetb">
+<form>
+      <div className="paytb">
       <table className="table">
-        {/* <table className='table-responsive border-primary' id="pay-table"> */}
         <thead className="thead-dark">
           <tr>
-            <th scope="col" id="table-col">#</th>
-            <th scope="col" id="table-col">Customer ID</th>
-            <th scope="col" id="table-col">Pay ID</th>
-            <th scope="col" id="table-col">Payment Method</th>
-            <th scope="col" id="table-col">CardNumber</th>
+            <th>#</th>
+            <th>Customer ID</th>
+            <th>Pay ID</th>
+            <th>Payment Method</th>
+            <th>Card Number</th>
 
-            <th scope="col" id="table-col">Cardholder Name</th>
-            <th scope="col" id="table-col">Expiry Date</th>
-            <th scope="col" id="table-col">CVC</th>
-            <th scope="col" id="table-col">Total Revenue (Rs.)</th>
-            <th scope="col" id="table-col">Action</th>
+            <th>Cardholder Name</th>
+            <th>Expiry Date</th>
+            <th>CVC</th>
+            <th>Total Revenue (Rs.)</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody className="tbody">
@@ -137,13 +136,15 @@ const AllPayments = (props) => {
               <td>
 
 
-                  <Link className='edit' to={`/updatePayment/${user._id}`}>
-                <button type="submit" className="btn btn-primary" id="action-viewbtn" title="Update">Update</button>
-                </Link>
+                  <Link className='btn btn-success' to={`/updatePayment/${user._id}`} id="btn-update" title='Update'>
+                  <AiFillEdit size="20px" color="white" className='icon-edit'/>
+                {/* <button type="submit" className="btn btn-primary" id="action-viewbtn" title="Update">Update</button> */}
+                </Link><br/>
                    
         
-                  <Link className="delete" onClick={() => deletePayment(user._id)}>
-                    <button type="submit" name="delete_btn" className="btn btn-danger" id="action-delbtn" title="Delete" data-target="#alert-wrapper">Delete</button>
+                  <Link className="btn btn-danger" onClick={() => deletePayment(user._id)} title="Delete">
+                    {/* <button type="submit" name="delete_btn" className="btn btn-danger" id="action-delbtn" title="Delete" data-target="#alert-wrapper">Delete</button> */}
+                    <FaTrashAlt size="20px" color="white"/>
                 </Link>
                 
                 
@@ -155,7 +156,7 @@ const AllPayments = (props) => {
       </table>
      </div> 
 
-
+     </form>
     </div>
 </>
 
