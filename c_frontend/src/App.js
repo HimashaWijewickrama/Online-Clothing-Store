@@ -28,10 +28,11 @@ import UpdateCart from './components/cart_offer/UpdateCart'
 import UserOffer from './components/cart_offer/UserOffer';
 import OfferView from './components/cart_offer/OfferView';
 
-/* payment feedback */
-import addpay from './components/feedback_pay/AddPayment';
-import addfed from './components/feedback_pay/AddFeedback';
-import addcon from './components/feedback_pay/AddContact';
+
+/*payment and feedback*/
+import AddPayment from './components/payment_feedback/AddPayment';
+import AddFeedback from './components/payment_feedback/AddFeedback';
+import Mailer from './components/payment_feedback/ContactUs';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
@@ -57,10 +58,11 @@ function App() {
              <Route path="/user_offer" exact component={UserOffer} />
              <Route path="/get_offer/:id" exact component={OfferView} />
 
-             <Route path="/addpay" exact component={addpay}/>
-             <Route path="/addpfed" exact component={addfed}/>
-             <Route path="/addcon" exact component={addcon}/>
-
+            
+             <Route path="/add" exact component={AddPayment}/>
+             <Route path="/adds" exact component={AddFeedback}/>
+             <Route path="/added" exact component={Mailer}/>
+               
            </Switch>
          <Footer1/>
        </div>
